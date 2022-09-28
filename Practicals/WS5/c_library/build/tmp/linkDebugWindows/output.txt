@@ -1,0 +1,5 @@
+See file:///C:/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/linkDebugWindows/output.txt for all output for linkDebugWindows.
+linking example_c_library.dll successful.
+   Creating library C:\Users\bhara\Documents\Subjects\Y3S1\SEC (D)\WS5\Test\c_library\build\lib\main\debug\windows\example_c_library.lib and object C:\Users\bhara\Documents\Subjects\Y3S1\SEC (D)\WS5\Test\c_library\build\lib\main\debug\windows\example_c_library.exp
+
+Finished linkDebugWindows, see full log file:///C:/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/linkDebugWindows/output.txt.

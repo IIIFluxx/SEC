@@ -1,0 +1,6 @@
+rootProject.name = 'javacc-helloworld'
+include 'date_plugin'
+include 'find_plugin'
+include 'java_app'
+include 'api'
+

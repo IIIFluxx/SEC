@@ -1,0 +1,17 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    modules = [ 'javafx.controls' ]
+}
+
+application {
+    //mainClass = 'sillypackagenamepleasechange.SillyClassNamePleaseChange'
+    mainClass = 'edu.curtin.comp3003.filesearcher.FSUserInterface'
+}

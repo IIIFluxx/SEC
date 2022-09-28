@@ -1,0 +1,4 @@
+See file:///mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/compileDebugLinuxCpp/output.txt for all output for compileDebugLinuxCpp.
+compiling example_c_library.cpp successful.
+
+Finished compileDebugLinuxCpp, see full log file:///mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/compileDebugLinuxCpp/output.txt.

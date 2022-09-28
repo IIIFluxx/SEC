@@ -1,0 +1,4 @@
+See file:///mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/linkDebugLinux/output.txt for all output for linkDebugLinux.
+linking libexample_c_library.so successful.
+
+Finished linkDebugLinux, see full log file:///mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/linkDebugLinux/output.txt.

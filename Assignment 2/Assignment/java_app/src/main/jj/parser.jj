@@ -1,0 +1,86 @@
+PARSER_BEGIN(MyParser)
+package texteditor;
+import java.util.List;
+import java.util.ArrayList;
+public class MyParser 
+{
+
+}
+PARSER_END(MyParser)
+
+
+// SKIP = characters that should be skipped.
+SKIP : { " " | "\r" | "\t" }
+
+// TOKEN = What get parsed.
+TOKEN: {
+    < ALT : "alt" > |
+    < CTRL : "ctrl" > |
+    < SHIFT : "shift" > |
+    < INS : "insert" > |
+    < DEL : "delete" > |
+    < NEWLINE : "\n" > |
+    < LETTER : (["a"-"z"])+ > | // Must be lowercase.
+    < PLUS : "+" > |
+    < EQUALS : "=" > |
+    // Format: Quotation mark --> string --> quotation mark
+    < STRING : ["\""] (["_", "-","*","/", "a"-"z", "A"-"Z", " "])+ ["\""] > |
+        // A-Z with Spaces. Can be any number of characters.
+        // + means one-or-more of whatever is in parentheses
+        // ["\""] means it expects quotation marks before and after the main string.
+    < SOL : "at start of line" > |
+    < CARET: "at caret" >
+}
+
+// Java Code:
+List<TokenData> helloWorld(List<TokenData> listOfTokens) :
+{
+    // Whatever tokens BNF needs.
+    Token insdel;
+    Token location;
+    Token str;
+    Token ch;
+    Token plus = null;
+    List<String> list = new ArrayList<String>();
+}
+
+// BNF Expression for helloWorld():
+{
+    // Form: [Key combination of alt/ctrl/shift with '+' between] || Equals sign || INS/DEL || STRING
+    ( // Zero or more.
+        ( // <ALT> | <SHIFT> | <CTRL> | <LETTER> == one KEY
+            (ch=<ALT> | ch = <SHIFT> | ch = <CTRL> | ch = <LETTER>) (plus = <PLUS>)? // ? == zero or one. PLUS is optional.
+            {
+                //System.out.println("Character = " + ch.image);
+                list.add(ch.image);
+                if(plus != null)
+                {
+                    //System.out.println("Plus = " + plus.image);
+                    list.add(plus.image);
+                    plus = null;
+                }
+            }
+        )* // Means zero or more of these. ALlowing duplicates but Java code will only treat as pressed once.
+        // End of these parenthesis ^ == moving onto equals sign.
+
+        <EQUALS> (insdel = <INS> | insdel = <DEL>)
+        {
+            //System.out.println("Choice: " + insdel.image);
+        }
+        str = <STRING> (location = <SOL> | location = <CARET> )
+        {
+            //System.out.println("Str = " + str.image);
+            //System.out.println("Location = " + location.image);
+            TokenData newToken = new TokenData(list, insdel.image, str.image, location.image);
+            listOfTokens.add(newToken);
+            list = new ArrayList<String>();
+        }
+        [<NEWLINE>]
+        {
+            //System.out.println("======= END OF TOKEN ========\n");
+        }
+    )* // Zero or more.
+    <EOF>
+    {return listOfTokens;}
+}
+

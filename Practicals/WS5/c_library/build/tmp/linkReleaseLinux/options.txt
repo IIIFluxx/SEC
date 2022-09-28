@@ -1,0 +1,6 @@
+-shared
+-Wl,-soname,libexample_c_library.so
+-o
+"/mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC (D)/WS5/Test/c_library/build/lib/main/release/linux/libexample_c_library.so"
+"/mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC (D)/WS5/Test/c_library/build/obj/main/release/linux/3p7nvqbhb3qzd5dd3w3jbxjw7/example_c_library.o"
+-m64

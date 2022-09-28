@@ -1,0 +1,14 @@
+/TP
+/nologo
+/c
+/Zi
+/O2
+"/IC:\Program Files\AdoptOpenJDK\jdk-11.0.6.10-hotspot\include"
+"/IC:\Program Files\AdoptOpenJDK\jdk-11.0.6.10-hotspot\include\linux"
+"/IC:\Program Files\AdoptOpenJDK\jdk-11.0.6.10-hotspot\include\win32"
+"/IC:\Users\bhara\Documents\Subjects\Y3S1\SEC (D)\WS5\Test\c_library\src\main\public"
+"/IC:\Users\bhara\Documents\Subjects\Y3S1\SEC (D)\WS5\Test\c_library\src\main\headers"
+"/IC:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include"
+"/IC:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um"
+"/IC:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared"
+"/IC:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\ucrt"

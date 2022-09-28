@@ -1,0 +1,31 @@
+-x
+c++
+-c
+-fPIC
+-g
+-nostdinc
+-I
+/usr/lib/jvm/java-11-openjdk-amd64/include
+-I
+/usr/lib/jvm/java-11-openjdk-amd64/include/linux
+-I
+/usr/lib/jvm/java-11-openjdk-amd64/include/win32
+-I
+"/mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC (D)/WS5/Test/c_library/src/main/public"
+-I
+"/mnt/c/Users/bhara/Documents/Subjects/Y3S1/SEC (D)/WS5/Test/c_library/src/main/headers"
+-isystem
+/usr/include/c++/9
+-isystem
+/usr/include/x86_64-linux-gnu/c++/9
+-isystem
+/usr/include/c++/9/backward
+-isystem
+/usr/lib/gcc/x86_64-linux-gnu/9/include
+-isystem
+/usr/local/include
+-isystem
+/usr/include/x86_64-linux-gnu
+-isystem
+/usr/include
+-m64

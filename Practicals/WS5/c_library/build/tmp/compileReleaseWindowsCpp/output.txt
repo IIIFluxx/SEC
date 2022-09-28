@@ -1,0 +1,5 @@
+See file:///C:/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/compileReleaseWindowsCpp/output.txt for all output for compileReleaseWindowsCpp.
+compiling example_c_library.cpp successful.
+example_c_library.cpp
+
+Finished compileReleaseWindowsCpp, see full log file:///C:/Users/bhara/Documents/Subjects/Y3S1/SEC%20(D)/WS5/Test/c_library/build/tmp/compileReleaseWindowsCpp/output.txt.
